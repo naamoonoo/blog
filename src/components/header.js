@@ -9,14 +9,16 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
       borderBottom: "1px lightgray solid",
       boxShadow: "0 4px 5px -5px gray",
-      // display: "flex",
+      display: "flex",
+      alignItems: "center",
     }}
   >
     <div
       style={{
         // margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.25rem 1.0875rem`,
+        padding: `1rem 2rem`,
+        // marginRight: "40%",
       }}
     >
       <h3 style={{ margin: 0 }}>
@@ -30,6 +32,9 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h3>
+    </div>
+    <div style={{ paddingRight: "2rem", position: "absolute", right: 0 }}>
+      <Link>dev</Link>
     </div>
   </header>
 )
